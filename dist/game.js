@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import { random } from "./functions.js";
 import gradient from "gradient-string";

@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import showBanner from "node-banner";
 import { random } from "./functions.js";
