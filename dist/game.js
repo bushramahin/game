@@ -26,14 +26,14 @@ async function thinking() {
             //     await showBanner('You Won' , 'green')
             // })();
             console.log("You Won");
-            console.log("The number is : ", random());
+            console.log("The number is : ", correct_num);
         }
         else {
             // (async () => {
             //     await showBanner('Unfortunately You Lose !')
             // })();
             console.log("Unfortunately You Lose !");
-            console.log("The number is : ", random());
+            console.log("The number is : ", correct_num);
         }
         let { again } = await inquirer.prompt(again_guess);
         condition = again;

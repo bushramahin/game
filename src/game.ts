@@ -23,14 +23,16 @@ let again_guess = [
 async function thinking (){
     let condition = true
    while(condition){
+   
     let {gussed_number} = await inquirer.prompt(guess);
     let correct_num = random()
+    
         if(correct_num == gussed_number){
             // (async ()=>{
             //     await showBanner('You Won' , 'green')
             // })();
             console.log("You Won");
-            console.log("The number is : " , random());
+            console.log("The number is : " , correct_num);
             
         }
        else{
@@ -38,7 +40,7 @@ async function thinking (){
         //     await showBanner('Unfortunately You Lose !')
         // })();
         console.log("Unfortunately You Lose !");
-        console.log("The number is : " , random());
+        console.log("The number is : " , correct_num);
         }
         let {again} = await inquirer.prompt(again_guess)
         condition = again
